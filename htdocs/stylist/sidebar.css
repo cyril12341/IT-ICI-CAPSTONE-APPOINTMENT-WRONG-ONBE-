@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar Container */
+nav {
+    height: 100vh; /* Full screen height */
+    width: 250px; /* Sidebar width */
+    background-color: #000000; /* Darker background color */
+    position: fixed; /* Fixed on the left */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Sidebar List */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Sidebar Links */
+nav ul li {
+    margin: 15px 0; /* Spacing between links */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #ecf0f1; /* Light color for text */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect and scaling */
+}
+
+nav ul li a:hover {
+    background-color: #000000; /* Darker background on hover */
+    transform: translateX(10px); /* Slide effect on hover */
+}
+
+/* Active link style */
+nav ul li a.active {
+    background-color: #000000; /* Green for active link */
+    font-weight: bold; /* Make the active link bold */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for active link */
+}
+
+/* Sidebar Header (optional: if you want a header in the sidebar) */
+nav .sidebar-header {
+    padding: 20px;
+    color: #ecf0f1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #34495e;
+}
+
+/* Sidebar Footer (optional: if you want a footer in the sidebar) */
+nav .sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+/* Sidebar Responsive (for mobile view) */
+@media screen and (max-width: 768px) {
+    nav {
+        width: 200px; /* Reduced width for mobile */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font on mobile */
+    }
+
+    nav .sidebar-header {
+        font-size: 20px; /* Smaller font size for header on mobile */
+    }
+}
+

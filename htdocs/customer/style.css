@@ -1,0 +1,300 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for Content */
+.container {
+    margin-left: 270px; /* Space for the sidebar */
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Sub-heading */
+h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Links (e.g., navigation links) */
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: #4CAF50; /* Green color for hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Table Header */
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Table Row (odd/even) */
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #444;
+}
+
+/* Form Elements */
+form {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+form input[type="datetime-local"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+form input[type="hidden"] {
+    display: none;
+}
+
+/* Container for Appointment Actions */
+.appointment-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Notification Message */
+.notification {
+    padding: 10px;
+    background-color: #d9534f;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Layout Adjustments */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Margin Adjustments */
+form label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form button {
+    padding: 12px 18px;
+    font-size: 18px;
+}
+
+form input[type="datetime-local"] {
+    font-size: 16px;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #d84315;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form input[type="datetime-local"] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .appointment-actions {
+        gap: 15px;
+    }
+
+    .container .content {
+        box-shadow: none;
+        padding: 10px;
+    }
+}
+
+/* Ensure Content Fits */
+.content {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Adjustments for Navigation */
+nav {
+    width: 270px; /* Sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+nav ul li a.active {
+    background-color: #4CAF50;
+}
+/* Top Bar Styling */
+.top-bar {
+    background-color: #000000; /* Black background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Settings Menu */
+.settings-menu {
+    position: relative; /* To position the dropdown */
+    cursor: pointer;
+}
+
+.settings-icon {
+    font-size: 24px; /* Settings emoji size */
+    color: #ffffff; /* White text color */
+    margin-right: 20px;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px; /* Position it below the settings icon */
+    right: 0;
+    background-color: #ffffff; /* White background for the dropdown */
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: #000000; /* Black text color */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd; /* Light grey separator between items */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+}
+
+/* Show the dropdown when hovering over the settings icon */
+.settings-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none; /* Remove bottom border from last item */
+}
+
+/* Active Link Style */
+.dropdown-content a.active {
+    background-color: #000000; /* Black background for active link */
+    color: #ffffff; /* White text color for active link */
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Active item shadow */
+}
